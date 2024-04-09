@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Multi-Page Form with Dynamic Progress Bar</title>
+   
+</head>
+<body>
+
+<div id="progress-bar-container">
+    <div id="progress-bar" style="width: 0;"></div>
+</div>
+
+<div id="page1" class="page">
+    <h2>Page 1</h2>
+    <form id="formPage1">
+
+        <label>Name</label>
+        <input placeholder="Type here"/>
+
+         <label>Location</label>
+            <select id="select2" class="table" id="option1" onchange="handleOption1(event)">
+                <option value="">Choose an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+
+        <label>Choose your favorite color:</label>
+        <div>
+            <input type="radio" name="color" id="colorRed" value="red" required>
+            <label for="colorRed">Red</label>
+            <input type="radio" name="color" id="colorGreen" value="green">
+            <label for="colorGreen">Green</label>
+            <input type="radio" name="color" id="colorBlue" value="blue">
+            <label for="colorBlue">Blue</label>
+        </div>
+    </form>
+</div>
+
+<div id="page2" class="page" style="display: none;">
+    <h2>Page 2</h2>
+    <form id="formPage2">
+
+         <label>Subject</label>
+        <input placeholder="Type here"/>
+
+         <label>Type</label>
+            <select id="select2" class="table" id="option1" onchange="handleOption1(event)">
+                <option value="">Choose an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+
+
+        <label>Are you a student?</label>
+        <div>
+            <input type="radio" name="studentStatus" id="studentYes" value="yes" required>
+            <label for="studentYes">Yes</label>
+            <input type="radio" name="studentStatus" id="studentNo" value="no">
+            <label for="studentNo">No</label>
+        </div>
+    </form>
+</div>
+
+<div id="page3" class="page" style="display: none;">
+    <h2>Page 3</h2>
+    <form id="formPage3">
+
+
+        
+         <label>Subject</label>
+        <input placeholder="Type here"/>
+
+         <label>Type</label>
+            <select id="select2" class="table" id="option1" onchange="handleOption1(event)">
+                <option value="">Choose an option</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+
+        <label>Choose your age group:</label>
+        <div>
+            <input type="radio" name="ageGroup" id="ageGroupYoung" value="young" required>
+            <label for="ageGroupYoung">Under 18</label>
+            <input type="radio" name="ageGroup" id="ageGroupAdult" value="adult">
+            <label for="ageGroupAdult">18-30</label>
+            <input type="radio" name="ageGroup" id="ageGroupSenior" value="senior">
+            <label for="ageGroupSenior">Over 30</label>
+        </div>
+    </form>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
