@@ -18,7 +18,7 @@ const pages = document.querySelectorAll('.page');
         }
     }
 
-    // Event listeners for radio button changes
+   
     pages.forEach(page => {
         const radioButtons = page.querySelectorAll('input[type="radio"]');
         radioButtons.forEach(radioButton => {
@@ -28,5 +28,5 @@ const pages = document.querySelectorAll('.page');
         });
     });
 
-    // Show the first page initially
+  
     pages[currentPageIndex].style.display = 'block';
